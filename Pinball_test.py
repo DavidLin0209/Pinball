@@ -3,7 +3,7 @@ import random as rd
 # 初始本金為100
 capital = 100
 print("你的起始彈珠數為:", capital,"顆")
-for i in range(100):
+for i in range(1000000):
     a = [2, 4, 6, 8, 10]
     # 隨機抽取2、4、6、8、10的倍率
     rate = rd.choice(a)  #本次倍率
@@ -25,4 +25,5 @@ for i in range(100):
             capital += bet * rate
     else:
             capital -= bet
+
 print("遊戲結束！你的最終本金為:", capital)
